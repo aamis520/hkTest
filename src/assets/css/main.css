@@ -1,6 +1,7 @@
 body{
   padding-bottom: 60px;
 }
+input,button,select,textarea{outline:none}
 /* login*/
 .login-form .mint-field{
   background: #fff;
@@ -76,4 +77,11 @@ body{
 }
 .chooseCard .mint-actionsheet-listitem:nth-child(1){
   color: #4CA1F9;
+}
+.flexCen {
+  display: flex;
+  -webkit-align-items:center;
+  align-items:center;
+  -webkit-justify-content:center;
+  justify-content:center;
 }

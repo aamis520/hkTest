@@ -38,6 +38,10 @@ export default {
     showRecord: {
       type: Boolean,
       default: false,
+    },
+    recordUrl: {
+      type: String,
+      default: ''
     }
   },
   data () {
@@ -51,7 +55,11 @@ export default {
       this.$router.go(-1)
     },
     toRecord(){
-      this.$router.push('/assets/record')
+      if(this.recordUrl != ''){
+        this.$router.push(this.recordUrl)
+      }else{
+        this.$router.push('/assets/record')
+      }
     }
   }
 }

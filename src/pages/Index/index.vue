@@ -48,7 +48,7 @@ export default {
   },
   data () {
     return {
-      tabName: 'assets'
+      tabName: 'account'
     }
   },
   computed　: {
